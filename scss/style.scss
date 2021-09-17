@@ -3,3 +3,52 @@
 * { margin: 0; padding: 0; box-sizing: border-box;}
 ul,li,ol { list-style: none;}
 a { text-decoration: none;}
+
+#slider {
+    width: 500px; height: 300px;
+    border: 10px solid #000;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+
+    .list {
+        width: calc(100% * 4); // 500px x 4 = 2000px <- 부모의 4배
+        height: 100%;
+        margin-left: -100%;
+
+        li {
+            width: calc(100% / 4); // 2000px / 4 = 500px
+            height: 300px;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: #fff;
+
+            &[data-index="1"]{
+                background: hotpink;
+            }
+            &[data-index="2"]{
+                background: lavender;
+            }
+            &[data-index="3"]{
+                background: orangered;
+            }
+            &[data-index="4"]{
+                background: powderblue;
+            }
+        }
+    }
+
+    .prev {
+        position: absolute;
+        top: 50%; left: 50px;
+        transform: translateY(-50%);
+    }
+    .next {
+        position: absolute;
+        top: 50%; right: 50px;
+        transform: translateY(-50%);
+    }
+}

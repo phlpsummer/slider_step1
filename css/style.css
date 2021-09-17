@@ -9,4 +9,43 @@ ul, li, ol {
 a {
   text-decoration: none; }
 
+#slider {
+  width: 500px;
+  height: 300px;
+  border: 10px solid #000;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden; }
+  #slider .list {
+    width: calc(100% * 4);
+    height: 100%;
+    margin-left: -100%; }
+    #slider .list li {
+      width: calc(100% / 4);
+      height: 300px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      color: #fff; }
+      #slider .list li[data-index="1"] {
+        background: hotpink; }
+      #slider .list li[data-index="2"] {
+        background: lavender; }
+      #slider .list li[data-index="3"] {
+        background: orangered; }
+      #slider .list li[data-index="4"] {
+        background: powderblue; }
+  #slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%); }
+  #slider .next {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%); }
+
 /*# sourceMappingURL=style.css.map */
