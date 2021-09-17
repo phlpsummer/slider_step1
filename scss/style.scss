@@ -9,7 +9,7 @@ a { text-decoration: none;}
     border: 10px solid #000;
     margin: 100px auto;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 
     .list {
         width: calc(100% * 4); // 500px x 4 = 2000px <- 부모의 4배
@@ -37,6 +37,12 @@ a { text-decoration: none;}
             }
             &[data-index="4"]{
                 background: powderblue;
+            }
+            &[data-index="5"]{
+                background: peachpuff;
+            }
+            &[data-index="6"]{
+                background: peru;
             }
         }
     }

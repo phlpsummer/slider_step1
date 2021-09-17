@@ -14,8 +14,7 @@ a {
   height: 300px;
   border: 10px solid #000;
   margin: 100px auto;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   #slider .list {
     width: calc(100% * 4);
     height: 100%;
@@ -37,6 +36,10 @@ a {
         background: orangered; }
       #slider .list li[data-index="4"] {
         background: powderblue; }
+      #slider .list li[data-index="5"] {
+        background: peachpuff; }
+      #slider .list li[data-index="6"] {
+        background: peru; }
   #slider .prev {
     position: absolute;
     top: 50%;
